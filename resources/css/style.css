@@ -1,0 +1,387 @@
+/* BASIC SET UP */
+/* See Section 5 Lecture 41 for building navigation bar */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #766f6f;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden; /* allows to control the scroll bars or hide them */
+}
+
+/* Header including text and Chicago main picture - Reusable components */
+.row {
+    max-width: 1140px; 
+    margin: 0, auto;
+    }
+
+/* Header including text and Chicago main picture */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63)), url(imgs_for_css/architecture-bay-bridge-356830.jpg);
+    background-size: cover;
+    background-position: center;   
+    height: 100vh; /* Controls the height of Chicago main picture */
+    background-attachment: fixed;    
+}
+
+/* Header including text and Chicago main picture */
+.chicago-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);        
+}
+
+/* Header including text or headings to be reused */
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 220%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+/* Two buttons for header, main CHicago picture */
+
+/* Button link and visited after hoovering mouse over should not change, look the same */
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    margin-top: 15px;
+    /* 10px top and bottom, 30px left and right*/
+    padding: 10px 30px;
+    border-radius: 200px;
+    font-weight: 300;
+/* to get rid of underlining use this*/
+    text-decoration: none;  
+    transition: background-color 0.2s, border 0.2s, color 0.3s;
+}
+
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #F27935;
+    border: 1px solid #F27935;
+    margin-right: 15px;
+    color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #F27935;
+    color: #F27935;    
+}
+
+/* hovering over the active button should change the color of a button to darker one*/
+.btn:hover,
+.btn:active {
+    background-color: #f15d35;    
+}
+
+.btn-full:hover,
+.btn-full:active {    
+    border: 1px solid #f15d35;    
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #f15d35;
+    color: #fff;    
+}
+
+
+
+
+
+
+
+
+/* Section topic covers the whole section toopic*/
+.section-topic {    
+    background-size: cover;
+    background-color: #55c1c1;  /*#eaefef */
+    height: 390vh;
+    padding-left: 350px
+}
+
+/* Section topic includes header: "I Protest red light and speed photo cameras and here is why" */
+h2 {
+    text-align: center;
+    padding-top: 30px;
+    padding-right: 300px;
+    margin: 0;
+    color: #605a5a;
+    font-size: 220%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+h4 {
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Kavivanar', cursive;
+    font-family: 'Indie Flower', cursive;
+}
+
+/* Section topic includes a DIV containing topic paragraph" */
+.content-topic {
+    padding-top: 30px;    
+    padding-right: 15px;     
+    border-right: 1px solid #CCCCCC; 
+}
+
+/* Section topic includes class main-text to update topic paragraph */
+.main-text {
+    text-align: justify;    
+    line-height: 1.6;
+}
+
+/* Section topic includes class links-box to update links to the right of the topic paragraph */
+.links-box {
+    padding-left: 50px; 
+    margin-left: 0px;    
+}
+
+
+/* Section topic includes Red Light photo to the right formatting */
+.red-light img {
+    display: block;
+    height: 200px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+/* Section topic includes "Recent Press" name */
+#recent-press {
+    text-align: center;
+    color: #605a5a;
+    font-size: 120%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    margin-top: 50px;
+    width: 300px;
+}
+
+/* Section topic includes Recent Press related links */
+#recent-press-links {
+    margin-top: 30px;
+    width: 100%;
+    text-align: left;
+}
+
+/* Section topic includes Recent Press related links */
+#recent-press-links a {
+    color: black;    
+    margin-left: 40px;
+    text-decoration-color: #a58fb9;
+}
+
+/* Section topic includes Recent Press related links */
+#recent-press-links a:hover {    
+    color: red;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/* New Uber and Lyft Section with promo codes */
+.uber-lyft {
+    height: 100vh;
+    width: auto;
+    background-color: #e1eaea;
+    background-size: cover;
+}
+
+.steps-box {
+    margin-top: 30px;    
+}
+
+.steps-box img {
+      border: 8px solid #22313F;          
+      border-radius: 4%
+}
+
+.relative_img {              /* Added test stuff btn for a phone screen */                                      
+    position: relative;
+}  
+
+.absolute_img {               /* Added test stuff btn for a phone screen*/   
+    position: absolute;
+    top: 200px;
+    left: 170px; 
+    width: 300px;
+}
+
+.uber-app-screen {
+    width: 80%;
+    margin-left: 40%;
+    margin-bottom: 30px;
+}
+
+#btn-full-U {                                                       /* New Test btn Uber */
+    display: inline-block;
+    margin-top: 15px;
+    /* 10px top and bottom, 30px left and right*/
+    width: 250px;
+    padding: 10px 30px;
+    border-radius: 200px;
+    font-weight: 300;
+/* to get rid of underlining use this*/
+    text-decoration: none; 
+    transition: background-color 0.2s, border 0.2s, color 0.3s; 
+/* to get rid of a square border after click*/
+    outline: 0;
+}
+
+#btn-full-U {    
+    
+    background-color: rgb(9, 9, 26);                 /* New Test btn Uber */ 
+    border: 3px solid #1996b4;
+    margin-right: 15px;
+    color: #fff;
+}
+
+#btn-full-U:hover,                                       /* New Test btn Uber*/ 
+#btn-full-U:active {
+    background-color: rgb(22, 32, 64);
+    cursor: pointer;
+}
+
+.lyft-app-screen {
+    width: 80%;
+    margin-left: 40%;
+    margin-bottom: 30px;    
+}
+
+#btn-full-L {                                                       /* New Test btn Lyft */
+    display: inline-block;
+    margin-top: 15px;
+    /* 10px top and bottom, 30px left and right*/
+    width: 250px;
+    padding: 10px 30px;
+    border-radius: 200px;
+    font-weight: 300;
+/* to get rid of underlining use this*/
+    text-decoration: none; 
+    transition: background-color 0.2s, border 0.2s, color 0.3s; 
+/* to get rid of a square border after click*/
+    outline: 0;
+}
+
+#btn-full-L {    
+    
+    background-color: rgba(255, 0, 186, 0.93);                 /* New Test btn Lyft */ 
+    border: 3px solid #1996b4;
+    margin-right: 15px;
+    color: #fff;
+}
+
+#btn-full-L:hover,                                       /* New Test btn Lyft*/ 
+#btn-full-L:active {
+    background-color: rgba(255, 0, 186, 0.82);
+    cursor: pointer;
+}
+
+.section-name {
+    background-size: cover;
+    text-align: right;
+    padding-top: 0px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-size: 220%;
+    font-weight: 300;    
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+.signup-steps {
+    margin-bottom: 50px;
+    margin-left: 40%;    
+    width: 160%;
+}
+
+.signup-steps div {
+    color: #F27935;
+    border: 2px solid #F27935;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    float: left;
+    font-size: 150%;
+    margin-top: 0px;
+    margin-right: 20px;
+}
+
+#link_to_uber {
+    color: #09091a;
+    font-weight: bold;
+}
+
+#link_to_lyft {
+    color: #ff00ba;
+    font-weight: bold;    
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+    border: none;    
+}
+
+/* New Uber and Lyft advirtisement Section */
+
+.section-uberlyft-add {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url(imgs_for_css/My_car_image_with_U_L_1.jpg);
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.uber-lyft-logo {
+    width: auto;
+    height: 150px;
+    margin-top: 15px;
+    margin-left: 35px;
+}
+
+.uber-lyft-driver {
+    width: auto;
+    height: 400px;
+    margin-top: 15px;
+    margin-left: 35px;
+}
+
+
+/* Comments Section */
+.fields {
+  transform: translate(60%, 60%);  
+  margin-top: -100px;
+  margin-bottom: 60px; 
+  width: 500px;
+}
+
+
