@@ -16,10 +16,18 @@
 /* Large laptop to desktop: from 1200 to 1367px (Our one row defined as 1140px wide*/
 @media only screen and (max-width: 1367px) {
     
+   /* Section topic includes header: "I Protest red light and speed photo cameras and here is why" */
+h2 {
+    
+    padding-top: 160px;
+    
+}
+ 
+    
     /* Section topic covers the whole section topic*/
     
     .section-topic {    
-        height: 620vh;        
+        height: 650vh;        
     }
     
     /* New Uber and Lyft Section with promo codes */
@@ -234,7 +242,8 @@
         letter-spacing: 1px;
         word-spacing: 2px;
     }
-
+    
+    /* Header including two buttons */
     .btn:link,
     .btn:visited {
         margin-top: 15px;
@@ -243,5 +252,56 @@
         border-radius: 200px;
         font-weight: 300;
     }
+    
+    /* Section topic covers the whole section toopic*/
+    
+    .section-topic {    
+        height: 1050vh;
+        width: 100%;        
+    }
+    
+    /* Section topic includes header: "I Protest red light and speed photo cameras and here is why" */
+    h2 {   
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        font-size: 130%;     
+        letter-spacing: 0px;
+        word-spacing: 1px;
+    }
+    
+ 
+    /* Section topic includes Red Light photo to the right formatting */
+    .red-light img {
+        display: block;
+        height: 150px;
+        width: 250px;
+        margin-top: 20px;
+    }
+    
+    /* New Uber and Lyft Section with promo codes */
+    .uber-lyft {
+        height: 280vh;
+    }
+    
+    /* Section I AM UBER - LYFT DRIVER text size*/
+    .section-name {    
+        font-size: 130%;         
+        word-spacing: 3px;
+    }
+    
+     /* Section I AM UBER - LYFT DRIVER Uber screen*/
+    .uber-app-screen {
+        width: 50%;
+        margin-left: 20%;
+        margin-bottom: 30px;
+    }
+    
+    .lyft-app-screen {
+        width: 50%;
+        margin-left: 20%;
+        margin-bottom: 30px;    
+    }
+
     
 }
