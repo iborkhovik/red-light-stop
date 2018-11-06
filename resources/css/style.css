@@ -63,7 +63,7 @@ h1 {
     /* 10px top and bottom, 30px left and right*/
     padding: 10px 30px;
     border-radius: 200px;
-    font-weight: 300;
+    font-weight: 350;
 /* to get rid of underlining use this*/
     text-decoration: none;  
     transition: background-color 0.2s, border 0.2s, color 0.3s;
@@ -81,7 +81,15 @@ h1 {
 .btn-ghost:link,
 .btn-ghost:visited {
     border: 1px solid #F27935;
-    color: #F27935;    
+    color: #f8c6aa;    
+}
+
+/* My story btn*/
+.btn-my-story:link,
+.btn-my-story:visited {
+    border: 1px solid #F27935;
+    color: #f8c6aa;
+    margin-left: 15px;
 }
 
 /* hovering over the active button should change the color of a button to darker one*/
@@ -101,6 +109,12 @@ h1 {
     color: #fff;    
 }
 
+/* My story btn*/
+.btn-my-story:hover,
+.btn-my-story:active {
+    border: 1px solid #f15d35;
+    color: #fff;    
+}
 
 
 
@@ -112,7 +126,7 @@ h1 {
 .section-topic {    
     background-size: cover;
     background-color: #55c1c1;  /*#eaefef */
-    height: 390vh;
+    height: 370vh;
     padding-left: 350px
 }
 
@@ -347,9 +361,10 @@ h4 {
 .btn-app img {
     height: 50px;
     width: auto;
-    margin-right: 10px;
+    margin-right: 20px;
     border: none;    
-}
+} 
+
 
 /* New Uber and Lyft advirtisement Section */
 
