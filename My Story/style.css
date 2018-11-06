@@ -1,0 +1,87 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica Neue, Arial;
+    font-size: 20px;
+}
+
+h1 {
+    color: rgba(0, 84, 128, 0.54);
+    font-size: 40px;
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #208469;
+    font-size: 25px;
+    text-align: center; 
+    margin-bottom: 15px;
+}
+
+p {
+   text-align: center;
+   color: chocolate;   
+}
+
+ul {
+   text-align: justify;
+   color: chocolate; 
+   margin-bottom: 20px;
+}
+
+.main-text {
+    text-align: justify;
+    line-height: 1.6;
+    margin-right: 15px;
+}
+
+.first-paragraph {
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #c9c9c9;
+}
+
+.second-paragraph {
+    font-size: 20px;
+    margin-top: 10px;
+    width: 350px;   
+}
+
+.container {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.biography {    
+    width: 75%;
+    float: left;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-bottom: 2px solid #c9c9c9;        
+}
+
+.picture-box {
+    width: 25%;
+    float: left;    
+}
+
+.my-picture img {
+    height: 250px;
+    width: 350px;
+    border-radius: 50%;
+}
+
+.uber-lyft-logo img {
+    width: auto;
+    height: 150px;
+    margin-top: 15px;
+    margin-left: 35px
+}
