@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -27,6 +28,7 @@ body {
 
 /* Header including text and Chicago main picture */
 header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.63)), to(rgba(0, 0, 0, 0.63))), url(imgs_for_css/architecture-bay-bridge-356830.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63)), url(imgs_for_css/architecture-bay-bridge-356830.jpg);
     background-size: cover;
     background-position: center;   
@@ -40,6 +42,7 @@ header {
     width: 1140px;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);        
 }
 
@@ -67,6 +70,7 @@ h1 {
     font-weight: 350;
 /* to get rid of underlining use this*/
     text-decoration: none;  
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.3s;  
     transition: background-color 0.2s, border 0.2s, color 0.3s;
 }
 
@@ -203,6 +207,7 @@ h4 {
 #recent-press-links a {
     color: black;    
     margin-left: 40px;
+    -webkit-text-decoration-color: #a58fb9;
     text-decoration-color: #a58fb9;
 }
 
@@ -262,6 +267,7 @@ h4 {
     font-weight: 300;
 /* to get rid of underlining use this*/
     text-decoration: none; 
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.3s; 
     transition: background-color 0.2s, border 0.2s, color 0.3s; 
 /* to get rid of a square border after click*/
     outline: 0;
@@ -297,6 +303,7 @@ h4 {
     font-weight: 300;
 /* to get rid of underlining use this*/
     text-decoration: none; 
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.3s; 
     transition: background-color 0.2s, border 0.2s, color 0.3s; 
 /* to get rid of a square border after click*/
     outline: 0;
@@ -370,6 +377,7 @@ h4 {
 /* New Uber and Lyft advirtisement Section */
 
 .section-uberlyft-add {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.71)), to(rgba(0, 0, 0, 0.71))), url(imgs_for_css/My_car_image_with_U_L_1.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url(imgs_for_css/My_car_image_with_U_L_1.jpg);
     background-size: cover;
     color: #fff;
@@ -394,6 +402,7 @@ h4 {
 
 /* Comments Section */
 .fields {
+  -webkit-transform: translate(60%, 60%);
   transform: translate(60%, 60%);  
   margin-top: -100px;
   margin-bottom: 60px; 
