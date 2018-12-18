@@ -309,7 +309,7 @@ h2 {
     /* 10px top and bottom, 30px left and right*/
     width: 200px;
     padding: 10px 30px;
-    border-radius: 200px;
+    border-radius: 150px;
     font-weight: 300;
 /* to get rid of underlining use this*/
     text-decoration: none; 
