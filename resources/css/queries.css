@@ -302,6 +302,21 @@ h2 {
         margin-left: 20%;
         margin-bottom: 30px;    
     }
+    
+    #btn-full-L {                                                       /* New Test btn Lyft */
+    display: inline-block;
+    margin-top: 15px;
+    /* 10px top and bottom, 30px left and right*/
+    width: 200px;
+    padding: 10px 30px;
+    border-radius: 200px;
+    font-weight: 300;
+/* to get rid of underlining use this*/
+    text-decoration: none; 
+    transition: background-color 0.2s, border 0.2s, color 0.3s; 
+/* to get rid of a square border after click*/
+    outline: 0;
+}
 
     
 }
