@@ -1,0 +1,322 @@
+
+/* Media Queries and Breakpoints for responsive web design 
+
+0px - 480px for cell phones
+
+480px - 768px for cell phones / small tablets
+
+768px - 1024px small tablets / large tablets
+
+1024px - 1200px laptop / desktop
+
+1200px - 1365px large laptop / desktop
+
+*/
+
+/* Large laptop to desktop: from 1200 to 1367px (Our one row defined as 1140px wide*/
+@media only screen and (max-width: 1367px) {
+    
+   /* Section topic includes header: "I Protest red light and speed photo cameras and here is why" */
+h2 {
+    
+    padding-top: 160px;
+    
+}
+ 
+    
+    /* Section topic covers the whole section topic*/
+    
+    .section-topic {    
+        height: 650vh;        
+    }
+    
+    /* New Uber and Lyft Section with promo codes */
+    .uber-lyft {
+        height: 110vh;    
+    }
+    
+     /* New Uber and Lyft Section with promo codes "I AM UBER — LYFT DRIVER" */
+    .section-name {        
+        text-align: center;        
+        margin-top: 60px;
+        margin-bottom: 40px;        
+    }
+    
+    .uber-app-screen {
+        width: 60%;
+        margin-left: 10%;
+    }
+    
+    #btn-full-U {
+    font-size: 14px;
+    margin-left: -110px;                          /* New Test btn Uber */    
+    width: 175px;    
+    }
+    
+    .lyft-app-screen {
+        width: 60%;
+        margin-left: -20%;
+    }
+    
+    #btn-full-L {
+    font-size: 14px;
+    margin-left: -219px;                          /* New Test btn Lyft */    
+    width: 175px;    
+    }
+    
+    .signup-steps {
+        margin-bottom: 50px;
+        margin-left: -53%;    
+        width: 160%;
+    }
+
+    .signup-steps div {        
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        float: left;
+        font-size: 150%;
+        margin-top: 0px;
+        margin-right: 20px;
+    }
+    
+}  
+
+/* Large tablet to small desktop: from 1024 to 1200px (Our one row defined as 1140px wide*/
+@media only screen and (max-width: 1200px) {  
+        
+        /* Header including text and Chicago main picture */
+    .chicago-text-box {   
+        width: 100%;
+        padding: 0 2%;          
+    } 
+    
+    html,
+    body {
+        font-size: 16px;
+        line-height: 1.6;        
+    }   
+    
+   /* Section topic covers the whole section toopic*/
+    
+    .section-topic {    
+        height: 550vh;
+        width: 100%;
+        padding: 0 2%;
+        margin-left: 0;
+        margin-right: auto
+    }
+    
+    /* Section topic includes a DIV containing topic paragraph" */
+    .content-topic {    
+        padding: 0 2%;
+    }
+    
+    .container {
+       /* width: 100%; */
+        width: 100%;
+        padding: 0 2%;
+        margin-left: 0;
+        margin-right: auto;
+    }
+    
+    .row {
+        max-width: 100%;
+        padding: 0 2%;
+        
+    }
+    
+    .main-text {
+    max-width: 100%;
+    padding: 0 2%;        
+    }
+    
+    /* Section topic includes class links-box to update links to the right of the topic paragraph */
+    .links-box {     
+        margin-left: 0px; 
+        padding: 0 2%;
+    }
+
+
+    /* Section topic includes Red Light photo to the right formatting */
+    .red-light img {        
+        height: 180px;
+        width: 280px;        
+    }
+    
+    /* New Uber and Lyft Section with promo codes */
+    
+    .uber-lyft {
+        height: 120vh;
+        width: auto;
+        background-color: #e1eaea;
+        background-size: cover;
+    }
+    
+     /* New Uber and Lyft Section with promo codes "I AM UBER — LYFT DRIVER" */
+    .section-name {        
+        text-align: center;        
+        margin-top: 60px;
+        margin-bottom: 40px;        
+    }
+    
+    .uber-app-screen {
+        width: 60%;
+        margin-left: 10%;
+    }
+    
+    #btn-full-U {   
+    margin-left: -120px;                          /* New Test btn Uber */    
+    width: 175px;    
+    }
+    
+    .lyft-app-screen {
+        width: 60%;
+        margin-left: -20%;
+    }
+    
+    #btn-full-L {   
+    margin-left: -225px;                          /* New Test btn Lyft */    
+    width: 175px;    
+    }
+    
+    .signup-steps {
+        margin-bottom: 50px;
+        margin-left: -53%;    
+        width: 160%;
+    }
+
+    .signup-steps div {        
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        float: left;
+        font-size: 150%;
+        margin-top: 0px;
+        margin-right: 20px;
+    }
+    
+    .uber-lyft-driver {
+    width: auto;
+    height: 300px;
+    margin-top: 15px;
+    margin-left: 35px;
+}
+      
+}
+
+
+
+/* Small tablet to large tablets: from 768 to 1023px */
+@media only screen and (max-width: 1023px) {
+   
+     /* Header including text and Chicago main picture */
+    .chicago-text-box {   
+        width: 100%;
+        padding: 0 2%;          
+    } 
+    
+}
+
+
+/* Small cell phones to small tablets: from 481 to 767px */
+@media only screen and (max-width: 767px) {
+    
+    /* Header including text or headings to be reused */
+    h1 {    
+    font-size: 160%;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    }
+}
+
+
+/* Small cell phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    
+    /* Header including text or headings to be reused */
+    h1 {    
+        font-size: 100%;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+    
+    /* Header including two buttons */
+    .btn:link,
+    .btn:visited {
+        margin-top: 15px;
+        /* 10px top and bottom, 30px left and right*/
+        padding: 5px 14px;
+        border-radius: 200px;
+        font-weight: 300;
+    }
+    
+    /* Section topic covers the whole section toopic*/
+    
+    .section-topic {    
+        height: 950vh;
+        width: 100%;        
+    }
+    
+    /* Section topic includes header: "I Protest red light and speed photo cameras and here is why" */
+    h2 {   
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        font-size: 130%;     
+        letter-spacing: 0px;
+        word-spacing: 1px;
+    }
+    
+ 
+    /* Section topic includes Red Light photo to the right formatting */
+    .red-light img {
+        display: block;
+        height: 150px;
+        width: 250px;
+        margin-top: 20px;
+    }
+    
+    /* New Uber and Lyft Section with promo codes */
+    .uber-lyft {
+        height: 280vh;
+    }
+    
+    /* Section I AM UBER - LYFT DRIVER text size*/
+    .section-name {    
+        font-size: 130%;         
+        word-spacing: 3px;
+    }
+    
+     /* Section I AM UBER - LYFT DRIVER Uber screen*/
+    .uber-app-screen {
+        width: 50%;
+        margin-left: 20%;
+        margin-bottom: 30px;
+    }
+    
+    .lyft-app-screen {
+        width: 50%;
+        margin-left: 20%;
+        margin-bottom: 30px;    
+    }
+    
+    #btn-full-L {                                                       /* New Test btn Lyft */
+    display: inline-block;
+    margin-top: 15px;
+    /* 10px top and bottom, 30px left and right*/
+    width: 150px;
+    padding: 10px 30px;
+    border-radius: 150px;
+    font-weight: 300;
+/* to get rid of underlining use this*/
+    text-decoration: none; 
+    transition: background-color 0.2s, border 0.2s, color 0.3s; 
+/* to get rid of a square border after click*/
+    outline: 0;
+}
+
+    
+}
