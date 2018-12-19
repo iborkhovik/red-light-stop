@@ -15,8 +15,8 @@ body {
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
-    overflow-x: hidden; /* allows to control the scroll bars or hide them */
-    overflow-y: auto;
+    overflow: none; /* allows to control the scroll bars or hide them, get rid of the secon scroll bar */
+    
 }
 
 /* Header including text and Chicago main picture - Reusable components */
