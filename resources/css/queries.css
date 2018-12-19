@@ -236,11 +236,17 @@ h2 {
 /* Small cell phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
     
-    /* Header including text or headings to be reused */
+    /* Header including text first part or headings to be reused */
     h1 {    
         font-size: 100%;
         letter-spacing: 1px;
         word-spacing: 2px;
+    }
+    
+    /* Header including text second part or headings to be reused */
+    h3 {        
+        font-size: 90%;
+        font-weight: 300;        
     }
     
     /* Header including two buttons */
@@ -270,7 +276,11 @@ h2 {
         word-spacing: 1px;
     }
     
- 
+    /* Section topic includes a DIV containing topic paragraph" */
+    .content-topic {           
+        border-right: none; 
+    }
+    
     /* Section topic includes Red Light photo to the right formatting */
     .red-light img {
         display: block;

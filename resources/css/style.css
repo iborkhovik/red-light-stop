@@ -4,7 +4,6 @@
 * {
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -17,7 +16,7 @@ body {
     font-size: 20px;
     text-rendering: optimizeLegibility;
     overflow-x: hidden; /* allows to control the scroll bars or hide them */
-    
+    overflow-y: auto;
 }
 
 /* Header including text and Chicago main picture - Reusable components */
@@ -28,7 +27,6 @@ body {
 
 /* Header including text and Chicago main picture */
 header {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.63)), to(rgba(0, 0, 0, 0.63))), url(imgs_for_css/architecture-bay-bridge-356830.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63)), url(imgs_for_css/architecture-bay-bridge-356830.jpg);
     background-size: cover;
     background-position: center;   
@@ -42,11 +40,10 @@ header {
     width: 1140px;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);        
 }
 
-/* Header including text or headings to be reused */
+/* Header including text first part or headings to be reused */
 h1 {
     margin: 0;
     color: #fff;
@@ -57,20 +54,29 @@ h1 {
     word-spacing: 4px;
 }
 
-/* Two buttons for header, main CHicago picture */
+/* Header including text second part or headings to be reused */
+h5 {
+    margin: 0;
+    color: #fff;
+    font-size: 190%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+/* Three buttons for header, main CHicago picture */
 
 /* Button link and visited after hoovering mouse over should not change, look the same */
 .btn:link,
 .btn:visited {
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 30px;
     /* 10px top and bottom, 30px left and right*/
     padding: 10px 30px;
     border-radius: 200px;
     font-weight: 350;
 /* to get rid of underlining use this*/
     text-decoration: none;  
-    -webkit-transition: background-color 0.2s, border 0.2s, color 0.3s;  
     transition: background-color 0.2s, border 0.2s, color 0.3s;
 }
 
@@ -125,14 +131,22 @@ h1 {
 
 
 
+/* Section topic covers the whole section toopic*/
+#parent {
+  height: auto;
+}
 
+#child {
+  height: 100%;
+  width: 100%; 
+}
 
 /* Section topic covers the whole section toopic*/
 .section-topic {    
     background-size: cover;
     background-color: rgba(212, 176, 134, 0.99);  /*#eaefef */
-    height: 370vh;
-    padding-left: 350px
+    height: auto;      /* 370vh */
+    padding-left: 350px;
 }
 
 /* Section topic includes header: "I Protest red light and speed photo cameras and here is why" */
@@ -160,6 +174,7 @@ h4 {
     padding-top: 30px;    
     padding-right: 15px;     
     border-right: 1px solid #CCCCCC; 
+    
 }
 
 /* Section topic includes class main-text to update topic paragraph */
@@ -207,7 +222,6 @@ h4 {
 #recent-press-links a {
     color: black;    
     margin-left: 40px;
-    -webkit-text-decoration-color: #a58fb9;
     text-decoration-color: #a58fb9;
 }
 
@@ -267,7 +281,6 @@ h4 {
     font-weight: 300;
 /* to get rid of underlining use this*/
     text-decoration: none; 
-    -webkit-transition: background-color 0.2s, border 0.2s, color 0.3s; 
     transition: background-color 0.2s, border 0.2s, color 0.3s; 
 /* to get rid of a square border after click*/
     outline: 0;
@@ -303,7 +316,6 @@ h4 {
     font-weight: 300;
 /* to get rid of underlining use this*/
     text-decoration: none; 
-    -webkit-transition: background-color 0.2s, border 0.2s, color 0.3s; 
     transition: background-color 0.2s, border 0.2s, color 0.3s; 
 /* to get rid of a square border after click*/
     outline: 0;
@@ -377,7 +389,6 @@ h4 {
 /* New Uber and Lyft advirtisement Section */
 
 .section-uberlyft-add {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.71)), to(rgba(0, 0, 0, 0.71))), url(imgs_for_css/My_car_image_with_U_L_1.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url(imgs_for_css/My_car_image_with_U_L_1.jpg);
     background-size: cover;
     color: #fff;
@@ -402,7 +413,6 @@ h4 {
 
 /* Comments Section */
 .fields {
-  -webkit-transform: translate(60%, 60%);
   transform: translate(60%, 60%);  
   margin-top: -100px;
   margin-bottom: 60px; 
