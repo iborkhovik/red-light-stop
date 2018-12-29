@@ -47,11 +47,7 @@ h2 {
         margin-left: 10%;
     }
     
-    #btn-full-U {
-    font-size: 14px;
-    margin-left: -110px;                          /* New Test btn Uber */    
-    width: 175px;    
-    }
+   
     
     .lyft-app-screen {
         width: 60%;
@@ -166,10 +162,7 @@ h2 {
         margin-left: 10%;
     }
     
-    #btn-full-U {   
-    margin-left: -120px;                          /* New Test btn Uber */    
-    width: 175px;    
-    }
+   
     
     .lyft-app-screen {
         width: 60%;
@@ -237,11 +230,13 @@ h2 {
 @media only screen and (max-width: 480px) {
     
     
-    html,
+   html,
     body {
         
-        overflow-x: hidden; /* allows to control the scroll bars or hide them, get rid of the secon scroll bar */
-    }
+   /*     overflow-x: hidden;
+        overflow-x: hidden;
+        /* allows to control the scroll bars or hide them, get rid of the secon scroll bar */
+    } 
 
     
     /* Header including text first part or headings to be reused */
@@ -299,7 +294,7 @@ h2 {
     
     /* New Uber and Lyft Section with promo codes */
     .uber-lyft {
-        height: 280vh;
+        height: 295vh;
     }
     
     /* Section I AM UBER - LYFT DRIVER text size*/
@@ -321,20 +316,34 @@ h2 {
         margin-bottom: 30px;    
     }
     
-    #btn-full-L {                                                       /* New Test btn Lyft */
-    display: inline-block;
+    .container {      
+      width: 100%;
+      max-width: 300px;
+    }
+    
+    .signup-steps {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 2%; 
+        width: 90%;
+        
+    }
+    
+    .uber-lyft-logo {
+    width: 50%;
+    height: 100px;
     margin-top: 15px;
-    /* 10px top and bottom, 30px left and right*/
-    width: 150px;
-    padding: 50px 30px;
-    border-radius: 150px;
-    font-weight: 300;
-/* to get rid of underlining use this*/
-    text-decoration: none; 
-    transition: background-color 0.2s, border 0.2s, color 0.3s; 
-/* to get rid of a square border after click*/
-    outline: 0;
+    margin-left: 90px;   
 }
+
+.uber-lyft-driver {
+    width: 50%;
+    height: 250px;
+    margin-top: 15px;
+    margin-left: 90px;
+}
+
+    
 
     
 }
