@@ -141,6 +141,7 @@ h5 {
   width: 100%; 
 }
 
+
 /* Section topic covers the whole section toopic*/
 .section-topic {    
     background-size: cover;
@@ -254,28 +255,41 @@ h4 {
       border-radius: 4%
 }
 
-.relative_img {              /* Added test stuff btn for a phone screen */                                      
-    position: relative;
-}  
-
-.absolute_img {               /* Added test stuff btn for a phone screen*/   
-    position: absolute;
-    top: 200px;
-    left: 170px; 
-    width: 300px;
+.container {
+  position: relative;
+  width: 80%;
+  max-width: 300px;
 }
 
-.uber-app-screen {
-    width: 80%;
-    margin-left: 40%;
-    margin-bottom: 30px;
+.container img {
+  width: 100%;
+  height: auto;
+  margin-left: 40px
 }
 
-#btn-full-U {                                                       /* New Test btn Uber */
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 64%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+
+#btnfull-U {                                                       /* New Test btn Uber */
     display: inline-block;
     margin-top: 15px;
     /* 10px top and bottom, 30px left and right*/
-    width: 250px;
+    width: 250px;    /* 250px */
     padding: 10px 30px;
     border-radius: 200px;
     font-weight: 300;
@@ -286,7 +300,8 @@ h4 {
     outline: 0;
 }
 
-#btn-full-U {    
+
+#btnfull-U {    
     
     background-color: rgb(9, 9, 26);                 /* New Test btn Uber */ 
     border: 3px solid #1996b4;
@@ -294,19 +309,14 @@ h4 {
     color: #fff;
 }
 
-#btn-full-U:hover,                                       /* New Test btn Uber*/ 
-#btn-full-U:active {
+#btn-fullU:hover,                                       /* New Test btn Uber*/ 
+#btn-fullU:active {
     background-color: rgb(22, 32, 64);
     cursor: pointer;
 }
 
-.lyft-app-screen {
-    width: 80%;
-    margin-left: 40%;
-    margin-bottom: 30px;    
-}
 
-#btn-full-L {                                                       /* New Test btn Lyft */
+#btnfull-L {                                                       /* New Test btn Lyft */
     display: inline-block;
     margin-top: 15px;
     /* 10px top and bottom, 30px left and right*/
@@ -321,7 +331,7 @@ h4 {
     outline: 0;
 }
 
-#btn-full-L {    
+#btnfull-L {    
     
     background-color: rgba(255, 0, 186, 0.93);                 /* New Test btn Lyft */ 
     border: 3px solid #1996b4;
@@ -329,11 +339,12 @@ h4 {
     color: #fff;
 }
 
-#btn-full-L:hover,                                       /* New Test btn Lyft*/ 
-#btn-full-L:active {
+#btn-fullL:hover,                                       /* New Test btn Lyft*/ 
+#btn-fullL:active {
     background-color: rgba(255, 0, 186, 0.82);
     cursor: pointer;
 }
+
 
 .section-name {
     background-size: cover;
@@ -348,10 +359,12 @@ h4 {
     word-spacing: 4px;
 }
 
+
 .signup-steps {
     margin-bottom: 50px;
-    margin-left: 40%;    
+    margin-left: 40%;
     width: 160%;
+    
 }
 
 .signup-steps div {
