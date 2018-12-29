@@ -41,7 +41,7 @@
         
         <div id="parent"> <!-- Borders whole section -->
             
-       <!--     <div id="child">  <!-- Borders section topic -->
+       <!--     <id="child"> is inside of section and part of it -->
             
         <section id="child" class="section-topic js--section-topic"> 
                       <div class="row"> 
@@ -130,7 +130,7 @@ There are some long streets in Chicago that if you drive on them for a few miles
     </div>
         </section>
             
-<!-- </div> <!-- End of div id "child" -->
+<!-- End of id "child" in a section -->
         
         </div> <!-- End of div id "parent" -->
     
@@ -141,40 +141,40 @@ There are some long streets in Chicago that if you drive on them for a few miles
             </div>
             <div class="row">
                 <div class="col span-1-of-3 steps-box">
-                    <div class="relative_img"><img src="resources/img/Screenshot_Uber.jpg" alt="Promo code for Uber" class="uber-app-screen">
-                        <div class="absolute_img">
-                            <button id="btn-full-U">Uber Promo Code </button>
-                        </div>                            
-                    </div>         
+                    <div class="container">
+                          <img src="resources/img/Screenshot_Uber.jpg" alt="Promo code for Uber" style="width:100%">
+                          <button class="btn" id="btnfull-U">Uber Promo Code</button>
+                    </div>
                 </div>
                 
                 <script type="text/javascript">
                     
-                    document.getElementById("btn-full-U").onclick = function() {
+                    document.getElementById("btnfull-U").onclick = function() {
                         
-                        document.getElementById("btn-full-U").innerHTML = "UAA6F";
+                        document.getElementById("btnfull-U").innerHTML = "UAA6F";
                     }
                     
                 </script>
                 
                 <div class="col span-1-of-3 steps-box">
-                    <div class="relative_img"><img src="resources/img/Screenshot_Lyft.jpg" alt="Promo code for Lyft" class="lyft-app-screen">
-                        <div class="absolute_img">
-                            <button id="btn-full-L">Lyft Promo Code </button>
-                        </div>
-                    </div>
+                   <div class="container">
+                         <img src="resources/img/Screenshot_Lyft.jpg" alt="Promo code for Lyft" style="width:100%">
+                         <button class="btn" id="btnfull-L">Lyft Promo Code</button>
+                   </div>
                 </div>
+                
                 
                  <script type="text/javascript">
                     
-                    document.getElementById("btn-full-L").onclick = function() {
+                    document.getElementById("btnfull-L").onclick = function() {
                         
-                        document.getElementById("btn-full-L").innerHTML = "ILYA61480";
+                        document.getElementById("btnfull-L").innerHTML = "ILYA61480";
                     }
+                    
                     
                 </script>
                 
-                <div class="col span-1-of-3 steps-box">
+                <div class="col span-1-of-3">                    
                     <div class="signup-steps">
                         <div>1</div>
                         <p>Sign Up with <a href="http://www.uber.com" target="_blank" id="link_to_uber">Uber</a> or <a href="http://www.lyft.com" target="_blank" id="link_to_lyft">Lyft</a> to become a rider or a driver or both. While signing up do not forget to use my promo code by clicking a button on a screen to the left. <br><br> &nbsp &nbsp If you sign up as a new rider, the promo code will save you some money on your first ride or will make it free, depends how far you go. <br><br> &nbsp &nbsp If you'd like to become a driver the promo code will allow you to get a few hundred dollars extra after compliting a certain number of rides. <br><br> &nbsp &nbsp The terms and condiltions may vary depending upon what country or city you are in. This info can be seen while signing up, or contact your Lyft or Uber local office.
@@ -194,8 +194,9 @@ There are some long streets in Chicago that if you drive on them for a few miles
                    
                   </div>  
                                                            
-                </div>
-                           
+                
+                    
+                   </div>        
             </div>            
        
         </section>
