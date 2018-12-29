@@ -233,8 +233,8 @@ h2 {
    html,
     body {
         
-   /*     overflow-x: hidden;
         overflow-x: hidden;
+        
         /* allows to control the scroll bars or hide them, get rid of the secon scroll bar */
     } 
 
@@ -294,7 +294,7 @@ h2 {
     
     /* New Uber and Lyft Section with promo codes */
     .uber-lyft {
-        height: 410vh;
+        height: 370vh;
     }
     
     /* Section I AM UBER - LYFT DRIVER text size*/
