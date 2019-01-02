@@ -43,23 +43,52 @@ h2 {
         margin-bottom: 40px;        
     }
     
-    .uber-app-screen {
-        width: 60%;
-        margin-left: 10%;
-    }
+        
+    .container {
+  position: relative;
+  width: 70%;
+  max-width: 300px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  margin-left: 40px
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 64%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
     
+    #btnfull-U {                                             /* New Test btn Lyft */        
+        width: 230px;
+        /* 10px top and bottom, 30px left and right*/
+        padding: 10px 30px;
+        border-radius: 200px;
+        margin-left: 5px;
+}
+    
+    #btnfull-L {                                             /* New Test btn Lyft */        
+        width: 230px;
+        /* 10px top and bottom, 30px left and right*/
+        padding: 10px 30px;
+        border-radius: 200px;
+        margin-left: 5px;
+}
+
    
-    
-    .lyft-app-screen {
-        width: 60%;
-        margin-left: -20%;
-    }
-    
-    #btn-full-L {
-    font-size: 14px;
-    margin-left: -219px;                          /* New Test btn Lyft */    
-    width: 175px;    
-    }
     
     .signup-steps {
         margin-bottom: 50px;
@@ -159,27 +188,58 @@ h2 {
         margin-bottom: 40px;        
     }
     
-    .uber-app-screen {
-        width: 60%;
-        margin-left: 10%;
-    }
+       
+    .container {
+  position: relative;
+  width: 80%;
+  max-width: 300px;  
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  margin-left: 0px;
+  
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 12px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
     
-   
+     #btnfull-U {                                             /* New Test btn Lyft */        
+        width: 160px;
+        /* 10px top and bottom, 30px left and right*/
+        padding: 10px 30px;
+        border-radius: 200px;
+        margin-left: -49px;
+}
     
-    .lyft-app-screen {
-        width: 60%;
-        margin-left: -20%;
-    }
-    
-    #btn-full-L {   
-    margin-left: -225px;                          /* New Test btn Lyft */    
-    width: 175px;    
-    }
+    #btnfull-L {                                             /* New Test btn Lyft */        
+        width: 160px;
+        /* 10px top and bottom, 30px left and right*/
+        padding: 10px 30px;
+        border-radius: 200px;
+        margin-left: -40px;
+}
+
+  
     
     .signup-steps {
         margin-bottom: 50px;
-        margin-left: -53%;    
-        width: 160%;
+        margin-left: %;        
+        width: 100%;
     }
 
     .signup-steps div {        
@@ -306,17 +366,7 @@ h2 {
     }
     
      /* Section I AM UBER - LYFT DRIVER Uber screen*/
-    .uber-app-screen {
-        width: 50%;
-        margin-left: 20%;
-        margin-bottom: 30px;
-    }
     
-    .lyft-app-screen {
-        width: 50%;
-        margin-left: 20%;
-        margin-bottom: 30px;    
-    }
     
     .container {      
       width: 100%;
