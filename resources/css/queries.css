@@ -237,6 +237,13 @@ h2 {
         
         /* allows to control the scroll bars or hide them, get rid of the secon scroll bar */
     } 
+    
+    /* Header including text and Chicago main picture */
+        header {
+        position: fixed;
+        height: 100vh; /* Controls the height of Chicago main picture */
+        background-attachment: fixed;    
+    }
 
     
     /* Header including text first part or headings to be reused */
