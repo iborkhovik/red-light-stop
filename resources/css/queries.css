@@ -368,10 +368,52 @@ h2 {
      /* Section I AM UBER - LYFT DRIVER Uber screen*/
     
     
-    .container {      
+   
+    
+ .container {
+      position: relative;
+      width: 80%;
+      max-width: 300px;  
+}
+
+.container img {
       width: 100%;
-      max-width: 300px;
-    }
+      height: auto;
+      margin-left: 30px;
+  
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 77%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 12px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+    
+     #btnfull-U {                                             /* New Test btn Lyft */        
+        width: 200px;
+        /* 10px top and bottom, 30px left and right*/
+        padding: 10px 30px;
+        border-radius: 200px;
+        margin-left: -40px;
+}
+    
+    #btnfull-L {                                             /* New Test btn Lyft */        
+        width: 200px;
+        /* 10px top and bottom, 30px left and right*/
+        padding: 10px 30px;
+        border-radius: 200px;
+        margin-left: -40px;
+}
     
     .signup-steps {
         margin-top: 30px;
