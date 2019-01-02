@@ -14,6 +14,7 @@
 */
 
 /* Large laptop to desktop: from 1200 to 1367px (Our one row defined as 1140px wide*/
+/* My Laptop size*/
 @media only screen and (max-width: 1367px) {
     
    /* Section topic includes header: "I Protest red light and speed photo cameras and here is why" */
@@ -62,7 +63,7 @@ h2 {
     
     .signup-steps {
         margin-bottom: 50px;
-        margin-left: -53%;    
+        margin-left: -3%;    
         width: 160%;
     }
 
@@ -80,6 +81,7 @@ h2 {
 }  
 
 /* Large tablet to small desktop: from 1024 to 1200px (Our one row defined as 1140px wide*/
+/* My Tablet Size*/
 @media only screen and (max-width: 1200px) {  
         
         /* Header including text and Chicago main picture */
@@ -238,14 +240,7 @@ h2 {
         /* allows to control the scroll bars or hide them, get rid of the secon scroll bar */
     } 
     
-    /* Header including text and Chicago main picture */
-        header {
-        position: fixed;
-        height: 100vh; /* Controls the height of Chicago main picture */
-        background-attachment: fixed;    
-    }
-
-    
+       
     /* Header including text first part or headings to be reused */
     h1 {    
         font-size: 100%;
