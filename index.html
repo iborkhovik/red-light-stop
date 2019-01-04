@@ -23,7 +23,36 @@
         
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Kavivanar|Shadows+Into+Light" rel="stylesheet">
         
+           <!-- Use these jQuery ink to set up jQuery script for "Read More" -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        <!-- Use these jQuery ink to set up jQuery script for "Read More" -->
+        <script src="resources/js/script.js"></script>
+        
+        <!-- Script for "Read More" jQuery-->
+        <script>
+            $(document).ready(function(){
+                var readMoreHtml = $(".read-more").html();
+                var lessText = readMoreHtml.substr(0, 1700);
                 
+                if(readMoreHtml.length > 1700){
+                    $(".read-more").html(lessText).append("<a href='' class='read-more-link'>&nbsp Show More</a>");
+                } else {
+                    $(".read-more").html(readMoreHtml);                    
+                }
+                
+                $("body").on("click", ".read-more-link", function(event){
+                    event.preventDefault();
+                    $(this).parent(".read-more").html(readMoreHtml).append("<a href='' class='show-less-link'>&nbsp Show Less</a>")
+                });
+                
+                $("body").on("click", ".show-less-link", function(event){
+                    $(this).parent(".read-more").html(readMoreHtml.substr(0, 1700)).append("<a href='' class='show-more-link'>&nbsp Show More</a>")
+                });
+            });
+        </script>
+        
+        
         <title>UberBlogger</title>    
     </head>
     <body>
@@ -50,7 +79,14 @@
                 </div> 
                 
                 <div class="row"> 
+                    
+                    
                     <div class="col span-1-of-2 content-topic">
+                        
+                      <!-- "Read More" -->
+                      <div class="read-more"> 
+                        
+                        
             <p class="main-text"><h4>A long time ago when life was simpler, or so I thought...</h4><br>
                 
 <!-- See Sec 3 Lec 61 Developer Course for relative, fixed and absolute positioning also overlapping.  -->
@@ -103,8 +139,9 @@ There are some long streets in Chicago that if you drive on them for a few miles
  In conclusion, I wrote this post, as a driver myself and on behalf of many other drivers on the road, just to let it go, and express my frustration. 
  I protest red light and speed photo enforced cameras. Join me if you have similar feelings about this and let's protest together! Let’s keep this conversation going.
    
-            </p>        
-   <!--      </div> -->
+            </p>
+           <!--"Read More" -->              
+              </div> 
       </div> 
       
                 <div class="col span-1-of-2 links-box">      
@@ -204,7 +241,7 @@ There are some long streets in Chicago that if you drive on them for a few miles
     </div>
     
         <!-- New Uber and Lyft Section --> 
-    <div id="parent">
+    <div id="parent"> 
         <section id="child" class="section-uberlyft-add">
             <div class="row">
                 <h3 class="section-name">It is time to get in a car and enjoy the ride!</h3>
