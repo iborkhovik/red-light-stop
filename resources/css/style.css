@@ -27,11 +27,11 @@ body {
 
 /* Header including text and Chicago main picture */
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63)), url(imgs_for_css/architecture-bay-bridge-356830.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63)), url(imgs_for_css/architecture-bay-bridge-356830.jpg);    
     background-size: cover;
     background-position: center;   
     height: 100vh; /* Controls the height of Chicago main picture */
-    background-attachment: fixed;    
+    background-attachment: fixed;     
 }
 
 /* Header including text and Chicago main picture */
@@ -145,7 +145,7 @@ h5 {
 /* Section topic covers the whole section toopic*/
 .section-topic {    
     background-size: cover;
-    background-color: rgba(212, 176, 134, 0.99);  /*#eaefef */
+    background-color: rgba(242, 221, 174, 0.99);  /*#eaefef */
     height: auto;      /* 370vh */
     padding-left: 350px;
 }
@@ -176,6 +176,20 @@ h4 {
     padding-right: 15px;     
     border-right: 1px solid #CCCCCC; 
     
+}
+
+/* Section topic includes a "Read More" */
+.read-more {
+ /*   border: 1px solid #000; */ 
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Section topic includes a "Read More" */
+.read-more-link, .show-less-link {
+    text-decoration: none;
+    font-weight: bolder;
+    color: green; 
 }
 
 /* Section topic includes class main-text to update topic paragraph */
@@ -309,8 +323,8 @@ h4 {
     color: #fff;
 }
 
-#btn-fullU:hover,                                       /* New Test btn Uber*/ 
-#btn-fullU:active {
+#btnfull-U:hover,                                       /* New Test btn Uber*/ 
+#btnfull-U:active {
     background-color: rgb(22, 32, 64);
     cursor: pointer;
 }
@@ -339,8 +353,8 @@ h4 {
     color: #fff;
 }
 
-#btn-fullL:hover,                                       /* New Test btn Lyft*/ 
-#btn-fullL:active {
+#btnfull-L:hover,                                       /* New Test btn Lyft*/ 
+#btnfull-L:active {
     background-color: rgba(255, 0, 186, 0.82);
     cursor: pointer;
 }
@@ -425,8 +439,14 @@ h4 {
 
 
 /* Comments Section */
+
+.comments {
+   background-color: color: #F27935;
+}
+
 .fields {
-  transform: translate(60%, 60%);  
+  transform: translate(60%, 60%);
+  background-color: color: #F27935;
   margin-top: -100px;
   margin-bottom: 60px; 
   width: 500px;
