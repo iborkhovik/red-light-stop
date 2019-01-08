@@ -130,13 +130,9 @@ h2 {
      /* Header including text and Chicago main picture */
 header {
     
-    background-size: cover;
+    background-size:contain ;
     background-position: center;   
-    height: 100hv;
-    width: 100%;
-    /* Controls the height of Chicago main picture */
-    background-attachment: fixed;     
-}   
+    }   
     
     
     /* Header including text and Chicago main picture */
