@@ -130,7 +130,7 @@ h2 {
      /* Header including text and Chicago main picture */
 header {
     
-    background-size:contain ;
+    background-size: auto;
     background-position: center;   
     }   
     
