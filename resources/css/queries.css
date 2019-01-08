@@ -128,10 +128,8 @@ h2 {
 @media only screen and (max-width: 1200px) {  
         
      /* Header including text and Chicago main picture */
-header {
-    
-    background-size: auto;
-    background-position: center;   
+header {    
+      background-size: auto;     
     }   
     
     
@@ -232,7 +230,7 @@ header {
   -ms-transform: translate(-50%, -50%);
   background-color: #555;
   color: white;
-  font-size: 12px;
+  font-size: 15px;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
@@ -241,19 +239,19 @@ header {
 }
     
      #btnfull-U {                                             /* New Test btn Lyft */        
-        width: 160px;
+        width: 190px;
         /* 10px top and bottom, 30px left and right*/
         padding: 10px 30px;
         border-radius: 200px;
-        margin-left: -49px;
+        margin-left: -47px;
 }
     
     #btnfull-L {                                             /* New Test btn Lyft */        
-        width: 160px;
+        width: 190px;
         /* 10px top and bottom, 30px left and right*/
         padding: 10px 30px;
         border-radius: 200px;
-        margin-left: -40px;
+        margin-left: -47px;
 }
 
   
@@ -281,6 +279,12 @@ header {
     margin-top: 15px;
     margin-left: 35px;
 }
+    
+    /* New Uber and Lyft advirtisement Section */
+
+.section-uberlyft-add {
+    background-size: contain;
+    }
       
 }
 
