@@ -43,7 +43,21 @@ h2 {
         margin-bottom: 40px;        
     }
     
-        
+     #welcome {
+    background-size: cover;
+    color: #1a1102;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: -40px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    font-size: 120%;
+    font-weight: 300;    
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+   
     .container {
   position: relative;
   width: 70%;
@@ -113,7 +127,19 @@ h2 {
 /* My Tablet Size*/
 @media only screen and (max-width: 1200px) {  
         
-        /* Header including text and Chicago main picture */
+     /* Header including text and Chicago main picture */
+header {
+    
+    background-size: cover;
+    background-position: center;   
+    height: 100hv;
+    width: 100%;
+    /* Controls the height of Chicago main picture */
+    background-attachment: fixed;     
+}   
+    
+    
+    /* Header including text and Chicago main picture */
     .chicago-text-box {   
         width: 100%;
         padding: 0 2%;          
@@ -391,7 +417,7 @@ h2 {
   -ms-transform: translate(-50%, -50%);
   background-color: #555;
   color: white;
-  font-size: 12px;
+  font-size: 18px;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
@@ -400,19 +426,19 @@ h2 {
 }
     
      #btnfull-U {                                             /* New Test btn Lyft */        
-        width: 200px;
+        width: 220px;
         /* 10px top and bottom, 30px left and right*/
         padding: 10px 30px;
         border-radius: 200px;
-        margin-left: -40px;
+        margin-left: -44px;
 }
     
     #btnfull-L {                                             /* New Test btn Lyft */        
-        width: 200px;
+        width: 220px;
         /* 10px top and bottom, 30px left and right*/
         padding: 10px 30px;
         border-radius: 200px;
-        margin-left: -40px;
+        margin-left: -44px;
 }
     
     .signup-steps {
@@ -422,6 +448,22 @@ h2 {
         width: 90%;
         
     }
+    
+    #welcome {
+    background-size: cover;
+    color: #1a1102;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: -40px;
+    margin-bottom: -15px;
+    margin-left: -210px;
+    font-size: 80%;
+    font-weight: 400;    
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
     
     .uber-lyft-logo {
     width: 50%;
