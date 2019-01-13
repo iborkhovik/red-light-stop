@@ -326,6 +326,11 @@ header {
         /* allows to control the scroll bars or hide them, get rid of the secon scroll bar */
     } 
     
+      /* Header including text and Chicago main picture */
+    header {    
+        background-size: cover;    
+    }   
+    
        
     /* Header including text first part or headings to be reused */
     h1 {    
@@ -463,7 +468,12 @@ header {
     letter-spacing: 1px;
     word-spacing: 4px;
 }
+    
+     /* New Uber and Lyft advirtisement Section */
 
+.section-uberlyft-add {
+    background-size:cover;
+    }
     
     .uber-lyft-logo {
     width: 50%;
