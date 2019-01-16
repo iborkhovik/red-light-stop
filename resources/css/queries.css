@@ -328,7 +328,8 @@ header {
     
       /* Header including text and Chicago main picture */
     header {    
-        background-size: cover;    
+        background-size: cover;
+        -webkit-backface-visibility: hidden;
     }   
     
        
