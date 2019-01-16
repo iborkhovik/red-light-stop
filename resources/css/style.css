@@ -179,17 +179,18 @@ h4 {
 }
 
 /* Section topic includes a "Read More" */
-.read-more {
- /*   border: 1px solid #000; */ 
-    padding: 15px;
-    margin-bottom: 20px;
+#more {
+    display: none;
 }
 
 /* Section topic includes a "Read More" */
-.read-more-link, .show-less-link {
-    text-decoration: none;
-    font-weight: bolder;
-    color: green; 
+button {
+    background-color: #ff0066;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 30px;
+    padding: 5px;
 }
 
 /* Section topic includes class main-text to update topic paragraph */
