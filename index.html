@@ -29,27 +29,9 @@
         <!-- Use these jQuery ink to set up jQuery script for "Read More" -->
         <script src="resources/js/script.js"></script>
         
-        <!-- Script for "Read More" jQuery-->
+        <!-- Script for "Read More" java Script-->
         <script>
-            $(document).ready(function(){
-                var readMoreHtml = $(".read-more").html();
-                var lessText = readMoreHtml.substr(0, 1700);
-                
-                if(readMoreHtml.length > 1700){
-                    $(".read-more").html(lessText).append("<a href='' class='read-more-link'>&nbsp Show More</a>");
-                } else {
-                    $(".read-more").html(readMoreHtml);                    
-                }
-                
-                $("body").on("click", ".read-more-link", function(event){
-                    event.preventDefault();
-                    $(this).parent(".read-more").html(readMoreHtml).append("<a href='' class='show-less-link'>&nbsp Show Less</a>")
-                });
-                
-                $("body").on("click", ".show-less-link", function(event){
-                    $(this).parent(".read-more").html(readMoreHtml.substr(0, 1700)).append("<a href='' class='show-more-link'>&nbsp Show More</a>")
-                });
-            });
+           
         </script>
         
         
@@ -91,14 +73,15 @@
             <p class="main-text"><h4>A long time ago when life was simpler, or so I thought...</h4><br>
                 
 <!-- See Sec 3 Lec 61 Developer Course for relative, fixed and absolute positioning also overlapping.  -->
-
+  
      It’s been many years since I started driving, 1990 to be more specific. Chicago was the city where I began my new life  after immigrating from Eastern Europe. I simply enjoyed driving on those Chicago streets. Some wide and others narrower. While driving I would look out my window in awe. There was so much to explore in this great city. As spring turned into summer, I would roll down the window, happy to welcome in the fresh air. All the while, appreciating the change in season. Even on those hot summer days, I religiously rolled down that window. Considering the air conditioner was hardly reliable, as it constantly broke down in the presence of extreme heat. It was either the freon evaporates or the lack of power to cool off the inside of my Chevy Malibu station wagon. I had no concerns getting on the road. I was always certain that if I obeyed the rules of the road then I would be fine.<br><br>
+
 
 
 <h4>Things started changing…</h4> <br>
 
 
-    It was somewhere in 2003, though I might not be correct as far as the year, when I started seeing signs “red light photo enforced”. At first not paying much attention, but after a while I began hearing about people getting tickets in the mail for passing intersections on a red light. Thinking that they are limiting numbers in a city I did not think much of it.<br><br>
+    It was somewhere in 2003, though I might not be correct as far as the year, when I started seeing signs “red light photo enforced”. At first not paying much attention, but after a while I began hearing about people getting tickets in the mail for passing intersections on a red light. Thinking that they are limiting numbers in a city I did not think much of it.<br><br><span id="dots"></span><span id="more">
 
 
    <h4>New experiences surfaced as a professional driver…</h4> <br>
@@ -138,10 +121,33 @@ There are some long streets in Chicago that if you drive on them for a few miles
       So, what is the idea behind this network? Is it meant to stop the reckless drivers or the careless drivers from blowing red lights? 
    The data found in some of the articles I researched showed the amount of money collected in a city on average per year is about $65 million, changing slightly from year to year. Even more money in total is collected in the suburbs. So, even though the effect of the network on safety (as mentioned in the many articles I researched) is very controversial, the amount of money that is collected annually by the local governments is very real. Also, looking at these insignificant changes in the amount of money collected from year to year tells me that the number of violations is not actually going down. Yet the numbers of those who are actually reckless drivers are minorities. The majority, though, have to put up with extra stress on the roads and a much less pleasant driving experience.<br> 
  &nbsp; &nbsp;In conclusion, I wrote this post, as a driver and on behalf of many other drivers on the road, to express my frustration and to just let it go. 
- I protest red light and speed photo enforced cameras. Join me if you have similar feelings about this and let's protest together! Let’s keep this conversation going.
+ I protest red light and speed photo enforced cameras. Join me if you have similar feelings about this and let's protest together! Let’s keep this conversation going.<br><br></span>
    
             </p>
-           <!--"Read More" -->              
+           <!--"Read More" -->  
+<button type="button" id="read" onclick="read()">Read more</button> 
+                          
+<script type="text/javascript">
+    var i=0;   
+    function read(){
+         if(!i){
+             document.getElementById("more").style.
+                display = "inline";
+             document.getElementById("dots").style.
+                display = "none";
+             document.getElementById("read").innerHTML = "Read less";
+             i=1;
+         } 
+         else {
+             document.getElementById("more").style.
+                display = "none";
+             document.getElementById("dots").style.
+                display = "inline";
+             document.getElementById("read").innerHTML = "Read more";
+             i=0;
+         }
+    }                  
+</script>
               </div> 
       </div> 
       
