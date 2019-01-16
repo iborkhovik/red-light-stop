@@ -185,11 +185,11 @@ h4 {
 
 /* Section topic includes a "Read More" */
 button {
-    background-color: #ff0066;
+    background-color: #62c127;
     border: none;
     outline: none;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     padding: 5px;
 }
 
