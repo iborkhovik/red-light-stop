@@ -66,6 +66,16 @@ ul {
     border-bottom: 2px solid #c9c9c9;        
 }
 
+/* Button "Back to main page!" */
+#button1 {
+    background-color: #62c127;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+
 .picture-box {
     width: 25%;
     float: left;    
