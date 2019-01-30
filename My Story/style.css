@@ -5,8 +5,9 @@
 }
 
 body {
-    font-family: Helvetica Neue, Arial;
-    font-size: 20px;
+    background-color: rgba(242, 221, 174, 0.99);  /*#eaefef */
+    color: #1a1102;
+    
 }
 
 h1 {
@@ -16,28 +17,25 @@ h1 {
     margin-bottom: 20px;
 }
 
-h2 {
-    color: #208469;
-    font-size: 25px;
-    text-align: center; 
-    margin-bottom: 15px;
-}
-
 p {
    text-align: center;
    color: chocolate;   
 }
 
 ul {
-   text-align: justify;
-   color: chocolate; 
+   text-align: justify;   
    margin-bottom: 20px;
+   
 }
 
 .main-text {
     text-align: justify;
     line-height: 1.6;
     margin-right: 15px;
+    font-family: 'Lato', 'Arial', sans-serif;    
+    text-rendering: optimizeLegibility;
+    overflow: none; /* allows to control the scroll bars or hide them, get rid of the secon scroll bar */
+    font-size: 16px;
 }
 
 .first-paragraph {
@@ -74,14 +72,14 @@ ul {
 }
 
 .my-picture img {
-    height: 250px;
-    width: 350px;
+    height: 200px;
+    width: 300px;
     border-radius: 50%;
 }
 
 .uber-lyft-logo img {
     width: auto;
-    height: 150px;
+    height: 130px;
     margin-top: 15px;
     margin-left: 35px
 }
